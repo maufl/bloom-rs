@@ -31,6 +31,7 @@ use std::cmp::{min,max};
 use std::hash::{Hash,Hasher,SipHasher};
 use std::iter::Iterator;
 
+#[derive(Clone)]
 pub struct BloomFilter {
     bits: BitVec,
     num_hashes: u32,
